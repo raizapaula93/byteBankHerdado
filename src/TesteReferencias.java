@@ -6,8 +6,6 @@ public class TesteReferencias {
         g1.setSalario(5000.0);
         //g1.autentica(2222); -> não funciona pq quem tem o método autentica é a classe filha, e n a classe pai
         //System.out.println(nome);
-        Funcionario f = new Funcionario();
-        f.setSalario(2000.0);
 
         EditorVideo ev = new EditorVideo();
         ev.setSalario(2500.0);
@@ -19,7 +17,6 @@ public class TesteReferencias {
         // Ou seja, se temos um objeto Gerente(), a referência pode ser tanto do tipo Gerente, quanto do tipo Funcionario.
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(g1);
-        controle.registra(f);
         controle.registra(ev);
         controle.registra(d);
 
